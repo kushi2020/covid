@@ -1,0 +1,17 @@
+<p>travel-list works!</p>
+<form #userForm="ngForm" (ngSubmit)="betweenDate(userForm)">
+    <div class="container">
+<div class="form-group">
+    <label for="timefrom">Time From</label>
+
+<input type="text"  bsDatepicker class="form-control" id="timefrom"  name="timefrom" ngModel/>
+
+</div>
+<div class="form-group">
+    <label for="timeto">Time To</label>
+
+<input type="text" bsDatepicker  id="timeto" class="form-control" name="timeto" ngModel/>
+</div>
+<button class="btn btn-primary">Submit</button>
+</div>
+</form>
